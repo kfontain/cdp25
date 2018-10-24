@@ -10,7 +10,7 @@ Dans notre backlog, nous distinguons 2 types d'utilisateur : le Product Owner (P
 
 | ID | Description | Difficulty | Priority |
 |----|-------------|------------|----------|
-|    | **Générale**|            |          |
+|    | **General**|            |          |
 |  1 | En tant qu'utilisateur non-inscrit, je veux pouvoir m’inscrire en tant qu’utilisateur (e-mail, nom d’utilisateur, mot de passe).            | Hard | todo |
 |  2 | En tant qu’utilisateur, je souhaite pouvoir me connecter/déconnecter. | Easy | todo |
 |  3 | En tant qu’utilisateur, je souhaite pouvoir voir la liste des projets dont je fais parti. | Easy | todo |
