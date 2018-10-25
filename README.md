@@ -15,7 +15,7 @@ paranthèses avec les champs obligatoires en gras.
 |  1 | En tant qu'utilisateur non-inscrit, je veux pouvoir m’inscrire en tant qu’utilisateur (e-mail, nom d’utilisateur, mot de passe).            | 3 | todo |
 |  2 | En tant qu’utilisateur, je souhaite pouvoir me connecter/déconnecter. | 1 | todo |
 |  3 | En tant qu’utilisateur, je souhaite pouvoir voir la liste des projets dont je fais parti. | 1 | todo |
-|  4 | En tant qu’utilisateur, je veux pouvoir créer un nouveau projet duquel je deviendrai admin. (**Nom**, description, liste des devs, **product owner**, backlog, liste des tasks, liste des sprints, liste des tests, liste des documents, **durée** d’un sprint, liste des releases). | 3 | todo |
+|  4 | En tant qu’utilisateur, je veux pouvoir créer un nouveau projet duquel je deviendrai admin. (**Nom**, description, liste des devs, **product owner**, backlog, liste des tasks, liste des sprints, liste des tests, liste des documents, **durée d’un sprint**, liste des releases). | 3 | todo |
 |  5 | En tant que admin, je veux pouvoir ajouter/supprimer un développeur/PO à/de mon projet. | 1 | todo |
 |  6 | En tant que admin, je veux pouvoir modifier la description de mon projet. | 1 | todo |
 |  7 | En tant que admin, je veux pouvoir supprimer mon projet. | 1 | todo |
