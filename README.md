@@ -6,27 +6,26 @@
 
 ## Backlog
 
-Dans notre backlog, nous distinguons 2 types d'utilisateur : le Product Owner (PO) et les développeurs (dev). Lorsqu'une user story concerne les deux types, la personne est considérée comme étant un utilisateur. Les champs définissants une notion sont entre
-paranthèses avec les champs obligatoires en gras.
+Dans notre backlog, nous distinguons 2 types d'utilisateur : les visiteurs et les développeurs. Les champs définissants une notion sont entre paranthèses avec les champs obligatoires en gras.
 
 | ID | Description | Difficulty | Priority |
 |----|-------------|------------|----------|
 |    | **General** |            |          |
-|  1 | En tant que visiteur, je veux pouvoir m’inscrire en tant qu’utilisateur (e-mail, nom d’utilisateur, mot de passe).            | 3 |  |
-|  2 | En tant qu’utilisateur, je souhaite pouvoir me connecter/déconnecter. | 1 |  |
-|  3 | En tant qu’utilisateur, je souhaite pouvoir voir la liste des projets dont je fais parti. | 1 |  |
-|  4 | En tant qu’utilisateur, je veux pouvoir créer un nouveau projet. (**Nom**, description, liste des devs, **product owner**, backlog, liste des tasks, liste des sprints, liste des tests, liste des documents, **durée d’un sprint**, liste des releases). | 3 |  |
-|  5 | En tant que utilisateur, je veux pouvoir ajouter/supprimer un utilisateur à mon projet. | 1 |  |
-|  6 | En tant que utilisateur, je veux pouvoir modifier la description de mon projet. | 1 |  |
-|  7 | En tant que utilisateur, je peux supprimer mon projet. | 1 |  |
+|  1 | En tant que visiteur, je veux pouvoir m’inscrire en tant que développeur (**Obligatoire** : mail, nom d’utilisateur, mot de passe).            | 3 |  |
+|  2 | En tant que développeur, je souhaite pouvoir me connecter/déconnecter. | 1 |  |
+|  3 | En tant que développeur, je souhaite pouvoir voir la liste des projets dont je fais parti. | 1 |  |
+|  4 | En tant que développeur, je veux pouvoir créer un nouveau projet. (**Obligatoire** : Nom, durée des sprint; **Non-obligatoire** : description, liste des devs, backlog, liste des tasks, liste des sprints, liste des tests, liste des documents, liste des releases). | 3 |  |
+|  5 | En tant que développeur, je veux pouvoir ajouter un développeur à mon projet. | 1 |  |
+|  6 | En tant que développeur, je veux pouvoir modifier la description de mon projet. | 1 |  |
+|  7 | En tant que développeur, je peux supprimer mon projet. | 1 |  |
 |    | **Issue** |	|	|
-| 10 | En tant qu'utilisateur, je peux ajouter une nouvelle issue (**#id**, **description**, cout de réalisation, priorité). | 2 |  |
-| 11 | En tant qu’utilisateur, je peux modifier/supprimer une issue. | 1 |  |
-| 13 | En tant que PO, je peux ajouter/modifier une/la priorité d’une issue. | 1 |  |
-| 14 | En tant que PO, je veux pouvoir modifier la description de mon projet. | 1 |  |
+| 10 | En tant que développeur, je peux ajouter une nouvelle issue (**obligatoire** : id, description; **non-obligatoire** : cout de réalisation, priorité)au backlog d'un projet dont je fais parti. | 2 |  |
+| 11 | En tant que développeur, je peux modifier/supprimer une issue au backlog d'un projet dont je fais parti. | 1 |  |
+| 12 | En tant que développeur, je peux ajouter/modifier une/la priorité d’une issue du backlog d'un projet dont je fais parti. | 1 |  |
+| 13 | En tant que développeur, je veux pouvoir modifier la description de mon projet. | 1 |  |
 |    | **Task** |    |    |
-| 15 | En tant que dev, je veux pouvoir ajouter une nouvelle task (**description de la task**, **issue associée**, status (, doing, done), temps/ressources nécessaire, développeur en charge, dépendance entre tasks, sprint associé). | 2 |  |
-| 12 | En tant qu’utilisateur, je peux associer un état d'avancement (, DOING, DONE) à une task afin de suivre son avancement. | 1 |  |
+| 14 | En tant que dev, je veux pouvoir ajouter une nouvelle task (**description de la task**, **issue associée**, status (todo, doing, done), temps/ressources nécessaire, développeur en charge, dépendance entre tasks, sprint associé). | 2 |  |
+| 15 | En tant que développeur, je peux modifier l'état d'avancement (TODO, DOING, DONE) d'une task afin de suivre son avancement. | 1 |  |
 | 16 | En tant que dev, je veux pouvoir modifier/supprimer une task. | 1 |  |
 |    | **Sprint** |    |    |
 | 17 | En tant que dev, je veux pouvoir créer un nouveau sprint (**liste des US**, **liste des tâches**, cout total du sprint, cout des US réalisées). | 2 |  |
