@@ -29,10 +29,10 @@ paranthèses avec les champs obligatoires en gras.
 | 12 | En tant qu’utilisateur, je peux associer un état d'avancement (, DOING, DONE) à une task afin de suivre son avancement. | 1 |  |
 | 16 | En tant que dev, je veux pouvoir modifier/supprimer une task. | 1 |  |
 |    | **Sprint** |    |    |
-| 17 | En tant que dev, je veux pouvoir créer un nouveau sprint (**liste des US**, **liste des tâches**, **cout total du sprint**, **cout des US réalisées**). | 2 |  |
+| 17 | En tant que dev, je veux pouvoir créer un nouveau sprint (**liste des US**, **liste des tâches**, cout total du sprint, cout des US réalisées). | 2 |  |
 | 18 | En tant que dev, je veux pouvoir accéder à la liste des tasks d'un sprint. | 2 |  |
 | 19 | En tant que dev, je veux pouvoir voir la liste des sprints. | 1 |  |
-| 20 | En tant que dev, je veux pouvoir visualiser un sprint sous forme de burndown chart. | 1 |  |
+| 20 | En tant que dev, je veux pouvoir visualiser un sprint sous forme de burndown chart. | 3 |  |
 |    | **Test** |    |    |
 | 21 | En tant que dev, je veux pouvoir créer un test (**#id**, **issue associée**, description, status du test (passant/non-passant), historique du test (date et status)). | 2 |  |
 | 22 | En tant que dev, je veux pouvoir modifier/supprimer un test. | 1 |  |
@@ -42,4 +42,3 @@ paranthèses avec les champs obligatoires en gras.
 |    | **Release** |    |    |
 | 25 | En tant que dev, je veux pouvoir créer une nouvelle release. (**numéro de version**, **date**, description, changelog, **release téléchargeable**). | 2 |  |
 | 26 | En tant que dev, je veux pouvoir modifier/supprimer une release. | 1 |  |
-|    | **Release** |    |    |
