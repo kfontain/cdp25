@@ -8,7 +8,7 @@
 
 Dans notre backlog, nous distinguons 2 types d'utilisateur : les visiteurs et les développeurs. Les champs définissants une notion sont entre paranthèses avec les champs obligatoires en gras.
 
-| ID | Description | Difficulty | Priority | Schedule |
+| ID | Description | Difficulty | Priority | Sprint |
 |----|-------------|------------|----------|----------|
 |    | **General** |            |          |          |
 |  1 | En tant que visiteur, je veux pouvoir m’inscrire en tant que développeur (**Obligatoire** : mail, nom d’utilisateur, mot de passe) afin de commencer à utiliser l'application | 3 | Medium | 2 |
