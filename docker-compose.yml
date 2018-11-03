@@ -1,5 +1,7 @@
 version: '3'
 services:
+  # Créer le serveur Apache avec PHP comme défini par le Dockerfile
+  # Disponible à http://localhost[:80]/
   php-apache:
     build:
       context: .
@@ -7,6 +9,7 @@ services:
       - 80:80
     volumes:
       - ./app:/var/www/html:z
+    # MariaDB doit être créée avant ce serveur
     links:
       - 'mariadb'
 
@@ -17,13 +20,21 @@ services:
       - mariadb:/var/lib/mysql
     environment:
       TZ: 'Europe/Paris'
+
+      # Permettre l'authentication facile pour utiliser phpMyAdmin
+      #   Serveur: mariadb
+      #   Utilisateur: root
+      #   Laissez le mot de passe vide
       MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+
+      # Identifiants utilisés par PHP
       MYSQL_USER: 'cdp25'
       MYSQL_PASSWORD: 'r8T44vN9qQ'
       MYSQL_DATABASE: 'scrum'
     ports:
       - 8889:3306
 
+  # Disponible à http://localhost:8080/
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     environment:
@@ -34,5 +45,6 @@ services:
     volumes:
       - /sessions
 
+# Faire persister la base de données dans une volume Docker
 volumes:
   mariadb:
