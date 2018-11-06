@@ -4,7 +4,7 @@ Les tasks sont catégoriées en deux types (Design et Implementation). Le coût 
 
 | ID | Type | Description | Cost | Dependence | Issue |
 |----|------|-------------|------|------------|-------|
-| Tasks |------|-------------|------|------------|-------|
+| **Tasks** |             |      |            |       |
 |  A | Design | Design de la base de données permettant de stocker un backlog (plusieurs Issues). | 0.5 | | |
 |  A | Implementation | Réaliser la base de données permettant de stocker un backlog (plusieurs Issues). | 1.5 | Ad | |
 |  B | Design | Design de l’ensemble des requêtes permettant l'utilisation de la base de données. | 0.5 | | |
@@ -13,7 +13,7 @@ Les tasks sont catégoriées en deux types (Design et Implementation). Le coût 
 |  C | Implementation | Implémentation du formulaire permattant d'ajouter une nouvelle issue. | 1.5 | Bd Cd | |
 |  D | Design | Design de la page permettant de visualiser la liste des issues existantes d’un backlog + modifier une issue + supprimer une issue. | 0.5 | | |
 |  D | Implementation | Implémenter la page permettant de visualiser la liste des issues existantes d’un backlog + modifier/supprimer une issue | 2 | Bd Cd Dd | |
-| Tests |------|-------------|------|------------|-------|
+| **Tests** |             |      |            |       |
 | 1 | Design | Design du test : visualisation d’un backlog. | 0.5 | | 8 |
 | 1 | Implementation | Implémentation du test : visualisation d’un backlog | 0.5 | Di 1d | 8 |
 | 2 | Design | Design du test : modification d’une issue. | 0.5 | | 8 |
