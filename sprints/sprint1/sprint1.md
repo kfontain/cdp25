@@ -16,12 +16,12 @@ Les tasks sont catégoriées en deux types (Design et Implementation). Le coût 
 | **Tests** |             |      |            |       |
 | 1 | Design | Design du test : visualisation d’un backlog. | 0.5 | | 8 |
 | 1 | Implementation | Implémentation du test : visualisation d’un backlog | 0.5 | Di 1d | 8 |
-| 2 | Design | Design du test : modification d’une issue. | 0.5 | | 8 |
-| 2 | Implementation | Implémentation du test : modification d’une issue. | 0.5 | Ai Bi Ci Di 2d | 8 |
-| 3 | Design | Design du test : suppression d’une issue. | 0.5 | | 8 |
-| 3 | Implementation | Implémentation du test : suppression d’une issue. | 0.5 | Ai Bi Ci Di 3d | 8 |
-| 4 | Design | Design du test : ajouter une issue. | 0.5 | | 8 |
-| 4 | Implementation | Implémentation du test : ajouter une issue. | 0.5 | Ai Bi Ci Di 4d | 8 |
+| 2 | Design | Design du test : modification d’une issue. | 0.5 | | 10 |
+| 2 | Implementation | Implémentation du test : modification d’une issue. | 0.5 | Ai Bi Ci Di 2d | 10 |
+| 3 | Design | Design du test : suppression d’une issue. | 0.5 | | 10 |
+| 3 | Implementation | Implémentation du test : suppression d’une issue. | 0.5 | Ai Bi Ci Di 3d | 10 |
+| 4 | Design | Design du test : ajouter une issue. | 0.5 | | 9 |
+| 4 | Implementation | Implémentation du test : ajouter une issue. | 0.5 | Ai Bi Ci Di 4d | 9 |
 
 # Kanban
 
