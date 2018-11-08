@@ -7,7 +7,7 @@ services:
       context: .
     restart: always
     ports:
-      - 80:80
+      - 8081:80
     volumes:
       - ./app:/var/www/html:z
     # MariaDB doit être créée avant ce serveur
@@ -34,7 +34,7 @@ services:
       MYSQL_PASSWORD: 'r8T44vN9qQ'
       MYSQL_DATABASE: 'scrum'
     ports:
-      - 3306:3306
+      - 8082:3306
 
   # Disponible à http://localhost:8080/
   phpmyadmin:
