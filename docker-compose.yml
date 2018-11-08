@@ -1,7 +1,7 @@
 version: '3'
 services:
   # Créer le serveur Apache avec PHP comme défini par le Dockerfile
-  # Disponible à http://localhost[:80]/
+  # Disponible à l'adresse : http://localhost:8081/
   php-apache:
     container_name: php-apache
     build: .
@@ -16,7 +16,7 @@ services:
     links:
       - mariadb
 
-      #Disponible à l'adresse : http://localhost:3306
+  # Disponible à l'adresse : http://localhost:3306
   mariadb:
     container_name: mariadb
     image: mariadb:10.1
@@ -35,7 +35,7 @@ services:
     volumes:
       - mariadb:/var/lib/mysql
 
-  # Disponible à http://localhost:8080/
+  # Disponible à l'adresse : http://localhost:8080/
   phpmyadmin:
     container_name: phpmyadmin
     image: phpmyadmin/phpmyadmin
