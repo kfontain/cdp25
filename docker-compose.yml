@@ -1,7 +1,7 @@
 version: '3'
 services:
   # Créer le serveur Apache avec PHP comme défini par le Dockerfile
-  # Disponible à l'adresse : http://localhost:8081/
+  # Disponible à l'adresse : http://localhost:8080/
   php-apache:
     container_name: php-apache
     build: ./docker/php-apache
@@ -9,7 +9,7 @@ services:
     env_file:
       - ./docker/mysql/credentials.env
     ports:
-      - 8081:80
+      - 8080:80
     volumes:
       - ./app:/var/www/html:z
     # MySQL doit être créée avant ce serveur
@@ -36,14 +36,14 @@ services:
     volumes:
       - mysql:/var/lib/mysql
 
-  # Disponible à l'adresse : http://localhost:8080/
+  # Disponible à l'adresse : http://localhost:8081/
   phpmyadmin:
     container_name: phpmyadmin
     image: phpmyadmin/phpmyadmin
     environment:
       - PMA_ARBITRARY=1
     ports:
-      - 8080:80
+      - 8081:80
     volumes:
       - /sessions
     depends_on:
