@@ -15,12 +15,14 @@
         $backlog[] = array('1','do1','cout1','prio1');
 
         for ($i=0; $i < sizeof($backlog); $i++) {
+            $id = $backlog[$i][0];
+
             echo "<tr>";
             for ($j=0; $j < $sizeRaw; $j++) {
                 echo "<td>".$backlog[$i][$j]."</td>";
             }
-            echo "<td><a href=\"issue-form.php\">modify</a></td>";
-            echo "<td><a href=\"#\">delete</a></td>";
+            echo '<td><a href="issue-form.php?id=' . $id . '">modify</a></td>';
+            echo '<td><a href="#">delete</a></td>';
             echo "</tr>";
         }
     ?>
