@@ -4,7 +4,7 @@ services:
   # Disponible à l'adresse : http://localhost:8081/
   php-apache:
     container_name: php-apache
-    build: .
+    build: ./docker/php-apache
     env_file:
       - env/database.env
     restart: always
@@ -12,13 +12,13 @@ services:
       - 8081:80
     volumes:
       - ./app:/var/www/html:z
-    # MariaDB doit être créée avant ce serveur
+    # MySQL doit être créée avant ce serveur
     links:
       - 'mysql'
 
       #Disponible à l'adresse : http://localhost:3306
   mysql:
-    image: mysql
+    build: ./docker/mysql
     container_name: 'mysql'
     restart: always
     environment:
@@ -30,11 +30,9 @@ services:
       MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
 
       # Identifiants utilisés par PHP
-      MYSQL_USER: 'cdp25'
       MYSQL_DATABASE: 'scrum'
     ports:
       - 8082:3306
-
 
   # Disponible à l'adresse : http://localhost:8080/
   phpmyadmin:
