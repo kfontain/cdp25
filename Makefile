@@ -1,5 +1,7 @@
 default: down up
 
+all: destroy up
+
 build:
 	docker-compose build
 
@@ -11,14 +13,11 @@ up: build
 up-front: build
 	docker-compose up
 
-
-clean: down
-
 down:
 	docker-compose down
 
-
-all: destroy up
+clean:
+	docker-compose down --remove-orphans
 
 destroy:
 	docker-compose down -v --remove-orphans
