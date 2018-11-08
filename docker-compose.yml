@@ -1,10 +1,12 @@
 version: '3'
 services:
   # Créer le serveur Apache avec PHP comme défini par le Dockerfile
-  # Disponible à http://localhost[:80]/
+  # Disponible à l'adresse : http://localhost:8081/
   php-apache:
-    build:
-      context: .
+    container_name: php-apache
+    build: .
+    env_file:
+      - env/database.env
     restart: always
     ports:
       - 8081:80
@@ -21,7 +23,6 @@ services:
     restart: always
     environment:
       TZ: 'Europe/Paris'
-
       # Permettre l'authentication facile pour utiliser phpMyAdmin
       #   Serveur: mysql
       #   Utilisateur: root
@@ -33,17 +34,21 @@ services:
       MYSQL_DATABASE: 'scrum'
     ports:
       - 8082:3306
+    volumes:
+      - mariadb:/var/lib/mysql
 
-  # Disponible à http://localhost:8080/
+  # Disponible à l'adresse : http://localhost:8080/
   phpmyadmin:
+    container_name: phpmyadmin
     image: phpmyadmin/phpmyadmin
     environment:
       - PMA_ARBITRARY=1
-    restart: always
     ports:
       - 8080:80
     volumes:
       - /sessions
+    depends_on:
+      - mariadb
 
 # Faire persister la base de données dans une volume Docker
 volumes:

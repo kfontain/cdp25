@@ -1,29 +1,24 @@
-DOCKER = docker-compose
+default: down up
 
-default: down up-d
-
-all: destroy up-d
-
-# Runs in foreground
-up:
-	$(DOCKER) up
+build:
+	docker-compose build
 
 # Runs in background
-up-d:
-	$(DOCKER) up -d
+up: build
+	docker-compose up -d
 
-stop:
-	$(DOCKER) stop
-pause: stop
+# Runs in foreground
+up-front: build
+	docker-compose up
 
-start:
-	$(DOCKER) start
-resume: start
 
-down:
-	$(DOCKER) down
-.PHONY: clean
 clean: down
 
+down:
+	docker-compose down
+
+
+all: destroy up
+
 destroy:
-	$(DOCKER) down -v
+	docker-compose down -v
