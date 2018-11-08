@@ -12,26 +12,24 @@ services:
       - ./app:/var/www/html:z
     # MariaDB doit être créée avant ce serveur
     links:
-      - 'mariadb'
+      - 'mysql'
 
       #Disponible à l'adresse : http://localhost:3306
-  mariadb:
-    image: mariadb:10.1
+  mysql:
+    image: mysql
+    container_name: 'mysql'
     restart: always
-    volumes:
-      - mariadb:/var/lib/mysql
     environment:
       TZ: 'Europe/Paris'
 
       # Permettre l'authentication facile pour utiliser phpMyAdmin
-      #   Serveur: mariadb
+      #   Serveur: mysql
       #   Utilisateur: root
-      #   Laissez le mot de passe vide
+      #   mdp : root
       MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
 
       # Identifiants utilisés par PHP
       MYSQL_USER: 'cdp25'
-      MYSQL_PASSWORD: 'r8T44vN9qQ'
       MYSQL_DATABASE: 'scrum'
     ports:
       - 8082:3306
