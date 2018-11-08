@@ -34,8 +34,7 @@ services:
       MYSQL_DATABASE: 'scrum'
     ports:
       - 8082:3306
-    volumes:
-      - mariadb:/var/lib/mysql
+
 
   # Disponible à l'adresse : http://localhost:8080/
   phpmyadmin:
@@ -48,8 +47,8 @@ services:
     volumes:
       - /sessions
     depends_on:
-      - mariadb
+      - mysql
 
 # Faire persister la base de données dans une volume Docker
 volumes:
-  mariadb:
+  mysql:
