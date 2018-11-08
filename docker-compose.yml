@@ -7,14 +7,16 @@ services:
     build: .
     env_file:
       - env/database.env
+    restart: always
     ports:
-      - 80:80
+      - 8081:80
     volumes:
       - ./app:/var/www/html:z
     # MariaDB doit être créée avant ce serveur
     links:
       - mariadb
 
+      #Disponible à l'adresse : http://localhost:3306
   mariadb:
     container_name: mariadb
     image: mariadb:10.1
@@ -29,7 +31,7 @@ services:
       #   Laissez le mot de passe vide
       MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
     ports:
-      - 8889:3306
+      - 8082:3306
     volumes:
       - mariadb:/var/lib/mysql
 
