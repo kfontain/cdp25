@@ -1,6 +1,5 @@
 version: '3'
 services:
-  # Créer le serveur Apache avec PHP comme défini par le Dockerfile
   # Disponible à l'adresse : http://localhost:8080/
   php-apache:
     container_name: php-apache
