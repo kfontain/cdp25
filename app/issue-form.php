@@ -4,6 +4,12 @@
  * Modify Issue #3: issue-form.php?id=3
  */
 
+/**
+ * Gets an issue by ID.
+ *
+ * @param int $id ID of issue.
+ * @return array|bool Issue array, or FALSE on failure.
+ */
 function getIssue($id) {
     $mysqli = new mysqli($_ENV['MYSQL_HOST'], $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD'], $_ENV['MYSQL_DATABASE']);
 
@@ -21,13 +27,9 @@ function getIssue($id) {
         trigger_error($error, E_USER_ERROR);
         return FALSE;
     }
-    $stmt->bind_param('i', $id);
 
-    if (!$stmt->execute()) {
-        $error = 'Execute Error (' . $stmt->errno . ') ' . $stmt->error;
-        trigger_error($error, E_USER_ERROR);
-        return FALSE;
-    }
+    $stmt->bind_param('i', $id);
+    $stmt->execute();
 
     $result = $stmt->get_result();
     if ($stmt === FALSE) {
