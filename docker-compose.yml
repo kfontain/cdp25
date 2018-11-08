@@ -5,34 +5,36 @@ services:
   php-apache:
     container_name: php-apache
     build: ./docker/php-apache
-    env_file:
-      - env/database.env
     restart: always
+    env_file:
+      - ./docker/mysql/credentials.env
     ports:
       - 8081:80
     volumes:
       - ./app:/var/www/html:z
     # MySQL doit être créée avant ce serveur
     links:
-      - 'mysql'
+      - mysql
 
-      #Disponible à l'adresse : http://localhost:3306
+  # Disponible à l'adresse : http://localhost:3306
   mysql:
+    container_name: mysql
     build: ./docker/mysql
-    container_name: 'mysql'
+    command: --default-authentication-plugin=mysql_native_password
     restart: always
+    env_file:
+      - ./docker/mysql/credentials.env
     environment:
       TZ: 'Europe/Paris'
       # Permettre l'authentication facile pour utiliser phpMyAdmin
       #   Serveur: mysql
       #   Utilisateur: root
-      #   mdp : root
+      #   Pas de mdp
       MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
-
-      # Identifiants utilisés par PHP
-      MYSQL_DATABASE: 'scrum'
     ports:
       - 8082:3306
+    volumes:
+      - mysql:/var/lib/mysql
 
   # Disponible à l'adresse : http://localhost:8080/
   phpmyadmin:
