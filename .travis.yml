@@ -3,5 +3,7 @@ sudo: required
 language: php
 
 services:
-    -docker
+    - docker
 
+before_install:
+    - make
