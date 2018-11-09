@@ -27,14 +27,14 @@ Les tasks sont catégoriées en deux types (Design et Implementation). Le coût 
 
 | ID | TODO | DOING | DONE |
 |----|------|-------|------|
-| Ad |    x |       |      |
-| Ai |    x |       |      |
+| Ad |      |       |    x |
+| Ai |      |       |    x |
 | Bd |    x |       |      |
 | Bi |    x |       |      |
-| Cd |    x |       |      |
-| Ci |    x |       |      |
+| Cd |      |       |    x |
+| Ci |      |     x |      |
 | Dd |      |       |    x |
-| Di |    x |       |      |
+| Di |      |     x |      |
 | 1d |    x |       |      |
 | 1i |    x |       |      |
 | 2d |    x |       |      |
