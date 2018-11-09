@@ -29,8 +29,8 @@ Les tasks sont catégoriées en deux types (Design et Implementation). Le coût 
 |----|------|-------|------|
 | Ad |      |       |    x |
 | Ai |      |       |    x |
-| Bd |    x |       |      |
-| Bi |    x |       |      |
+| Bd |      |       |    x |
+| Bi |      |     x |      |
 | Cd |      |       |    x |
 | Ci |      |     x |      |
 | Dd |      |       |    x |
