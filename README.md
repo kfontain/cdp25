@@ -4,6 +4,8 @@
 * Lucas Vivas
 * Kenji Fontaine
 
+[![Build Status](https://travis-ci.org/kfontain/cdp25.svg?branch=master)](https://travis-ci.org/kfontain/cdp25)
+
 ## Backlog
 
 Dans notre backlog, nous distinguons 2 types d'utilisateur : les visiteurs et les développeurs. Les champs définissants une notion sont entre paranthèses avec les champs obligatoires en gras.
