@@ -1,16 +1,23 @@
 <?php
 
-$servername = 'mysql';
+/* 
+ * deleteIssue(id)
+ * createIssue(id, description, cost, prio)
+ * modifyIssue(id, description, cost, prio)
+ * getIssues()
+ * connect()
+ */
+$servername = 'localhost:8082';
 $username = 'root';
 $password = '';
 $dbname = 'scrum';
 
-$connection = mysqli_connect($servername, $username, $password, $dbname);
+$con = new mysqli($servername, $username, $password);
 
-if (!$connection) {
-    die('connection failed');
+if ($con->connect_error) {
+    die('error');
 }
-else {
-    echo 'connected succesfully';
-}
+
+echo('success');
+
 ?>
