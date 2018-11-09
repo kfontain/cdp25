@@ -5,5 +5,4 @@ language: php
 services:
     - docker
 
-before_install:
-    - make
+script: make
