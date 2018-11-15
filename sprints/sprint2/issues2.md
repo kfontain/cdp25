@@ -14,6 +14,6 @@
 |  7 | En tant que développeur, je peux supprimer mon projet. | 1 | Low | 2 |
 |    | **Issue** |            |          |        |
 |  9 | En tant que développeur, je peux ajouter une nouvelle issue (**Obligatoire** : id, description; **Non-obligatoire** : cout de réalisation, priorité) au backlog d'un projet dont je fais parti. | 2 | High | 1 |
-| 10 | En tant que développeur, je peux modifier/supprimer d'une issue au backlog d'un projet dont je fais parti. | 1 | High | 1 |
+| 10 | En tant que développeur, je peux modifier/supprimer une issue du backlog d'un projet dont je fais parti. | 2 | High | 1 |
 |    | **Sprint & Task** |    |    |    |
 | 13 | En tant que développeur, je veux pouvoir créer un nouveau sprint (**Obligatoire :** Numéro du sprint, **Non-Obligatoire :** tasks associées au sprint, cout total du sprint, cout des US réalisées). | 2 | Low | 2 |
