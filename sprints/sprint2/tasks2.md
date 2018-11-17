@@ -10,12 +10,12 @@ Les tasks sont catégoriées en deux types (Design et Implementation). Le coût 
 |  B | Implementation | Implémenter le fichier **query.php** permettant de réaliser l’ensemble des requêtes relatives à la gestion d'issues : création, modification, suppression d'une issue.| 2 | Ad Bd | |
 |  C | Implementation | Implémenter le formulaire **issue-form.php** permattant d'ajouter une nouvelle issue à un backlog . | 1.5 | Bd Cd | |
 |  D | Implementation | Implémenter la page **backlog.php** permettant de visualiser la liste des issues existantes d’un backlog + offrant la possibilité de modifier/supprimer une issue à l'aide de deux boutons distincts. | 2 | Bd Cd Dd | |
-|  E | Design | Déterminer le nom du fichier php ainsi que les noms de fonctions assurant la gestion des comptes développeurs utilisant l'application. Un visiteur peut créer un compte développeur à partir d'une adresse mail, nom d'utilisateur et un mot de passe. | 0.5 | | |
-|  E | Implementation | Implémenter le fichier php ainsi que les fonctions assurant la gestion des comptes développeurs utilisant l'application. | 2 | Ed | |
-|  F | Design | Déterminer le nom de la fonction permettant à un développeur de se déconnecter de l'application. Cette fonction se trouvera dans le même fichier que le fichier assurant la gestion des utilisateur (Task E). | 0.5 |  | |
-|  F | Implementation | Implémenter la fonction permettant la déconnection d'un développeur. | 1 | Ei | |
-|  G | Design | Déterminer le nom du fichier php ainsi que des fonctions permettant à un développeur de créer un nouveau projet à son nom. | 0.5 | | |
-|  G | Implementation | Implémenter les fonctions permettant la création d'un nouveau projet. | 1 | Ei | |
+|  E | Design | Déterminer le nom du fichier php ainsi que les noms de fonctions assurant la gestion des comptes développeurs utilisant l'application. Un visiteur peut créer un compte développeur à partir d'une adresse mail, nom d'utilisateur et un mot de passe. | 0.5 | | 1 |
+|  E | Implementation | Implémenter le fichier php ainsi que les fonctions assurant la gestion des comptes développeurs utilisant l'application. | 2 | Ed | 1 |
+|  F | Design | Déterminer le nom de la fonction permettant à un développeur de se déconnecter de l'application. Cette fonction se trouvera dans le même fichier que le fichier assurant la gestion des utilisateur (Task E). | 0.5 |  | 2 |
+|  F | Implementation | Implémenter la fonction permettant la déconnection d'un développeur. | 1 | Ei | 2 |
+|  G | Design | Déterminer le nom du fichier php ainsi que des fonctions permettant à un développeur de créer un nouveau projet à son nom. | 0.5 | | 4 |
+|  G | Implementation | Implémenter les fonctions permettant la création d'un nouveau projet. | 1 | Ei | 4 |
 | **Tests** |             |      |            |       |
 | 1 | Design | Design du test : visualisation d’un backlog. | 0.5 | | 8 |
 | 1 | Implementation | Implémentation du test : visualisation d’un backlog | 0.5 | Di 1d | 8 |
