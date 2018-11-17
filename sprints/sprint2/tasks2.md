@@ -7,9 +7,9 @@ Les tasks sont catégoriées en deux types (Design et Implementation). Le coût 
 | ID | Type | Description | Cost | Dependence | Issue |
 |----|------|-------------|------|------------|-------|
 | **General** |             |      |            |       |
-|  B | Implementation | Implémenter l’ensemble des requêtes permettant l'utilisation de la base de données. | 2 | Ad Bd | |
-|  C | Implementation | Implémentation du formulaire permattant d'ajouter une nouvelle issue. | 1.5 | Bd Cd | |
-|  D | Implementation | Implémenter la page permettant de visualiser la liste des issues existantes d’un backlog + modifier/supprimer une issue | 2 | Bd Cd Dd | |
+|  B | Implementation | Implémenter le fichier **query.php** permettant de réaliser l’ensemble des requêtes relatives à la gestion d'issues : création, modification, suppression d'une issue.| 2 | Ad Bd | |
+|  C | Implementation | Implémenter le formulaire **issue-form.php** permattant d'ajouter une nouvelle issue à un backlog . | 1.5 | Bd Cd | |
+|  D | Implementation | Implémenter la page **backlog.php** permettant de visualiser la liste des issues existantes d’un backlog + offrant la possibilité de modifier/supprimer une issue à l'aide de deux boutons distincs. | 2 | Bd Cd Dd | |
 | **Tests** |             |      |            |       |
 | 1 | Design | Design du test : visualisation d’un backlog. | 0.5 | | 8 |
 | 1 | Implementation | Implémentation du test : visualisation d’un backlog | 0.5 | Di 1d | 8 |
