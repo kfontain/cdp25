@@ -51,6 +51,6 @@ Une task est considérée comme étant finie lorsque le procédé de développem
 
 ### issues
 
-| ID | Description | Difficulty | Priority |
+| id | description | cost | priority |
 |----|-------------|------------|----------|
 | INT UNSIGNED NOT NULL | TEXT NON NULL | INT | INT |
