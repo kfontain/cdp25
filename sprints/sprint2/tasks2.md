@@ -7,8 +7,8 @@ Les tasks sont catégoriées en deux types (Design et Implementation). Le coût 
 | ID | Description | Cost | Dependence | Issue |
 |----|-------------|------|------------|-------|
 | **General**      |      |            |       |
-|  B | Implémenter le fichier **query.php** permettant de réaliser l’ensemble des requêtes relatives à la gestion d'issues : création, modification, suppression d'une issue.| 2 | Ad Bd | |
-|  C | Implémenter le formulaire **issue-form.php** permettant d'ajouter une nouvelle issue à un backlog . | 1.5 | Bd Cd |  9 |
+|  B | Implémenter le fichier **query.php** permettant de se connecter à la base de données MySQL *scrum.issues* réaliser l’ensemble des requêtes relatives à la gestion d'issues : récuperation de l'ensemble des issues (getIssues()), création (fonction : createIssue(id, description, cost, prio)), modification (modifyIssue(id, description, cost, prio)), suppression d'une issue (deleteIssue(id)).| 2 | Ad Bd | |
+|  C | Implémenter le formulaire **issue-form.php** permettant d'ajouter une nouvelle issue à un backlog ou de modifier une issue du backlog. Ce fomulaire comprend différents champs : Description qui est un champ de texte **obligatoire**, Cout de réalisation qui est un champ pouvant uniquement contenir des nombres positifs par pas de 0,5, Priorité qui est un champ qui peut contenir uniquement 4 valeurs différentes ( None, low, medium, high) qui correspond à la priorité de l'issue. Le formulaire comprend 2 boutons : le premier (Submit) qui doit vérifier si le champ *desciription* a été remplie et appelle la fonction *createIssue* du fichier **query.php** dans le cas où il faut ajouter une nouvelle issue (si l'appel à la page n'avais pas de parametre de requete). Appelle la fonction *modifyIssue* du fichier **query.php** dans le cas où l'appel à la page s'est fait avec le paramétre *id=X* où X corresponds à l'id de l'issue à modifier. Le deuxième bouton (*reset*) permets de vider tout les champs. | 1.5 | Bd Cd |  9 |
 |  D | Implémenter la page **backlog.php** permettant de visualiser la liste des issues existantes d’un backlog + offrant la possibilité de modifier/supprimer une issue à l'aide de deux boutons distincts. | 2 | Bd Cd Dd | 8, 10 |
 |  E | Déterminer le nom du fichier php ainsi que les noms de fonctions assurant la gestion des comptes développeurs utilisant l'application. Ajouter ces noms dans le fichier de spécifications. Un visiteur peut créer un compte développeur à partir d'une adresse mail, nom d'utilisateur et un mot de passe. Implémenter ce fichier. | 2 | | 1 |
 |  F | Déterminer le nom de la fonction permettant à un développeur de se déconnecter de l'application. Spécifier ces noms dans le fichier de spécifications. Cette fonction se trouvera dans le même fichier que le fichier assurant la gestion des utilisateur (Task E). Implémenter ce fichier ainsi que ces fonctions. | 2 |  | 2 |
@@ -27,15 +27,12 @@ Les tasks sont catégoriées en deux types (Design et Implementation). Le coût 
 
 | ID | TODO | DOING | DONE |
 |----|------|-------|------|
-| Bi |      |     x |      |
-| Ci |      |     x |      |
-| Di |      |     x |      |
-| Ed |    x |       |      |
-| Ei |    x |       |      |
-| Fd |    x |       |      |
-| Fi |    x |       |      |
-| Gd |    x |       |      |
-| Gi |    x |       |      |
+| B  |      |     x |      |
+| C  |      |     x |      |
+| D  |      |     x |      |
+| E  |    x |       |      |
+| F  |    x |       |      |
+| G  |    x |       |      |
 | 1d |    x |       |      |
 | 1i |    x |       |      |
 | 2d |    x |       |      |
