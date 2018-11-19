@@ -5,4 +5,4 @@ language: php
 services:
     - docker
 
-script: make
+script: make all
