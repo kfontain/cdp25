@@ -44,3 +44,11 @@ L'application est développée en utilisant les technologies suivantes :
 ## Definition of Done
 
 Une task est considérée comme étant finie lorsque le procédé de développement ainsi que l'ensemble des tests unitaires pour chacune des fonctionnalités décrites par la task sont réalisés et passants.
+
+## SQL Tables
+
+**Name of database :** scrum
+
+|    | **General** |            |          |        |
+| ID | Description | Difficulty | Priority | Sprint |
+|----|-------------|------------|----------|--------|
