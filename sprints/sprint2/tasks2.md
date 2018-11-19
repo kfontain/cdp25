@@ -13,7 +13,6 @@ Les tasks sont catégoriées en deux types (Design et Implementation). Le coût 
 |  E | Déterminer le nom du fichier php ainsi que les noms de fonctions assurant la gestion des comptes développeurs utilisant l'application. Ajouter ces noms dans le fichier de spécifications. Un visiteur peut créer un compte développeur à partir d'une adresse mail, nom d'utilisateur et un mot de passe. Implémenter ce fichier. | 2 | | 1 |
 |  F | Déterminer le nom de la fonction permettant à un développeur de se déconnecter de l'application. Spécifier ces noms dans le fichier de spécifications. Cette fonction se trouvera dans le même fichier que le fichier assurant la gestion des utilisateur (Task E). Implémenter ce fichier ainsi que ces fonctions. | 2 |  | 2 |
 |  G | Déterminer le nom du fichier php ainsi que des fonctions permettant à un développeur de créer un nouveau projet à son nom. Spécifier ces noms dans le fichier de spécification. Implémenter ce fichier et ces fonctions. | 2 | | 4 |
-|  G | Implémenter les fonctions permettant la création d'un nouveau projet. | 1 | Ei | 4 |
 | **Tests** |             |      |            |       |
 | 1 | Design | Design du test : visualisation d’un backlog. | 0.5 | | 8 |
 | 1 | Implementation | Implémentation du test : visualisation d’un backlog | 0.5 | Di 1d | 8 |
