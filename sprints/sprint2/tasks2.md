@@ -13,15 +13,13 @@ Les tasks sont catégoriées en deux types (Design et Implementation). Le coût 
 |  E | Déterminer le nom du fichier php ainsi que les noms de fonctions assurant la gestion des comptes développeurs utilisant l'application. Ajouter ces noms dans le fichier de spécifications. Un visiteur peut créer un compte développeur à partir d'une adresse mail, nom d'utilisateur et un mot de passe. Implémenter ce fichier. | 2 | | 1 |
 |  F | Déterminer le nom de la fonction permettant à un développeur de se déconnecter de l'application. Spécifier ces noms dans le fichier de spécifications. Cette fonction se trouvera dans le même fichier que le fichier assurant la gestion des utilisateur (Task E). Implémenter ce fichier ainsi que ces fonctions. | 2 |  | 2 |
 |  G | Déterminer le nom du fichier php ainsi que des fonctions permettant à un développeur de créer un nouveau projet à son nom. Spécifier ces noms dans le fichier de spécification. Implémenter ce fichier et ces fonctions. | 2 | | 4 |
+|  H | Déterminer le nom de la table SQL ainsi que les champs permettant de stocker un développeur. Renseigner les champs de la table dans le fichier de spécifications. Implémenter ce fichier et ces fonctions. | 1 | | 4 |
+|  I | Déterminer le nom de la table SQL ainsi que les champs permettant de stocker un projet. Renseigner les champs de la table dans le fichier de spécifications. Implémenter ce fichier et ces fonctions. | 1 | | 4 |
 | **Tests** |             |      |            |       |
-| 1 | Design du test : visualisation d’un backlog. | 0.5 | | 8 |
-| 1 | Implémentation du test : visualisation d’un backlog | 0.5 | Di 1d | 8 |
-| 2 | Design du test : modification d’une issue. | 0.5 | | 10 |
-| 2 | Implémentation du test : modification d’une issue. | 0.5 | Ai Bi Ci Di 2d | 10 |
-| 3 | Design du test : suppression d’une issue. | 0.5 | | 10 |
-| 3 | Implémentation du test : suppression d’une issue. | 0.5 | Ai Bi Ci Di 3d | 10 |
-| 4 | Design du test : ajouter une issue. | 0.5 | | 9 |
-| 4 | Implémentation du test : ajouter une issue. | 0.5 | Ai Bi Ci Di 4d | 9 |
+| 1 | Test : visualisation d’un backlog. Déterminer le nom du fichier permettant d'effectuer ce test qui se trouvera dans cdp25/app/test. Ajouter le nom de ce fichier de test au fichier de spécification. | 1 | D | 8 |
+| 2 | Test : modification d’une issue. Déterminer le nom du fichier permettant d'effectuer ce test qui se trouvera dans cdp25/app/test. | 1 | A, B, C, D | 10 |
+| 3 | Test : suppression d’une issue. Déterminer le nom du fichier permettant d'effectuer ce test qui se trouvera dans cdp25/app/test. Ajouter le nom de ce fichier de test au fichier de spécification. | 1 | A, B, C, D | 10 |
+| 4 | Test : ajouter une issue. Déterminer le nom du fichier permettant d'effectuer ce test qui se trouvera dans cdp25/app/test. Ajouter le nom de ce fichier de test au fichier de spécification. | 1 | A, B, C, D | 9 |
 
 # Kanban
 
