@@ -1,23 +1,40 @@
 <?php
 
-/* 
+/*
+ * connect()
+ * getIssues()
  * deleteIssue(id)
  * createIssue(id, description, cost, prio)
  * modifyIssue(id, description, cost, prio)
- * getIssues()
- * connect()
  */
 $servername = 'localhost:8082';
 $username = 'root';
 $password = '';
 $dbname = 'scrum';
 
-$con = new mysqli($servername, $username, $password);
-
-if ($con->connect_error) {
-    die('error');
+public function connect()
+{
+    $con = new mysqli($servername, $username, $password);
+    if ($con->connect_error) {
+        die('error');
+    }
+    echo('success');
 }
 
-echo('success');
+public function getIssues()
+{
 
+}
+
+public function deleteIssue($id=-1)
+{
+}
+
+public function createIssue($id=-1, $description='', $cost=0, $prio='')
+{
+}
+
+public function ModifyIssue($id=-1, $description='', $cost=0, $prio='')
+{
+}
 ?>
