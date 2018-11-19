@@ -12,6 +12,8 @@ Les tasks sont catégoriées en deux types (Design et Implementation). Le coût 
 |  D | Implémenter la page **backlog.php** permettant de visualiser la liste des issues existantes d’un backlog sous forme d'un tableau avec pour entête : ID, Description, Cout de réalisation, priorité. Chaque ligne de ce tableau corresponds à une issue. Offrant la possibilité de modifier/supprimer une issue à l'aide de deux boutons distincts (*modifiy*, *delete*) qui se trouve au bout de chaque ligne pour pouvoir : modifier en appelant **issue-form.php?id=X** où X corresponds à l'id de l'issue, supprimer l'issue correspondant à la ligne en appelant la fonction *deleteIssue(id)* de **query.php**. En bas du tableau, un bouton permettant ajouter une issue (appel **issue-form.php**) | 2 | Bd Cd Dd | 8, 10 |
 |  E | Déterminer le nom du fichier php ainsi que les noms de fonctions assurant la gestion des comptes développeurs utilisant l'application. Ajouter ces noms dans le fichier de spécifications. Un visiteur peut créer un compte développeur à partir d'une adresse mail, nom d'utilisateur et un mot de passe. Il y a 3 fonctions différentes : une pour se connecter avec un nom d'utilisateur ainsi qu'un mot de passe, une autre fonction pour se deconnecter et enfin une fonction pour créer un compte (l'envoyer dans la base de données). Implémenter ce fichier. | 2 | | 1 |
 |  F | Déterminer le nom du fichier php ainsi que des fonctions permettant à un développeur de créer un nouveau projet à son nom. Spécifier ces noms dans le fichier de spécification. Il existe 3  Implémenter ce fichier et ces fonctions. | 2 | | 4 |
+|  F | Déterminer le nom du fichier php qui permettra de se connecter, cette page comportera 2 champs, le premier pour l'username(obligatoire), le deuxieme pour le mot de passe(obligatoire). Un bouton *login* afin de pouvoir se connecter. Un bouton *signup* afin de pouvoir aller sur la page de création de compte. Implémenter cette page. | ? || ? |
+|  F | Déterminer le nom du fichier php qui permettra de créer un compte, cette page comportera 3 champs,le premier pour l'adresse mail(obligatoire), la deuxième pour l'username(obligatoire), le troisieme pour le mot de passe(obligatoire). Un bouton *create* afin de pouvoir creer le compte. Un bouton *login* afin de pouvoir aller sur la page de connection. | ? || ? |
 |  G | Déterminer le nom de la table SQL ainsi que les champs permettant de stocker un développeur. Renseigner les champs de la table dans le fichier de spécifications. Implémenter ce fichier et ces fonctions. | 1 | | 4 |
 |  H | Déterminer le nom de la table SQL ainsi que les champs permettant de stocker un projet. Renseigner les champs de la table dans le fichier de spécifications. Implémenter ce fichier et ces fonctions. | 1 | | 4 |
 | **Tests** |             |      |            |       |
@@ -32,7 +34,11 @@ Les tasks sont catégoriées en deux types (Design et Implementation). Le coût 
 | G  |    x |       |      |
 | H  |    x |       |      |
 | I  |    x |       |      |
-| 1  |    x |       |      |
-| 2  |    x |       |      |
-| 3  |    x |       |      |
-| 4  |    x |       |      |
+| 1d |    x |       |      |
+| 1i |    x |       |      |
+| 2d |    x |       |      |
+| 2i |    x |       |      |
+| 3d |    x |       |      |
+| 3i |    x |       |      |
+| 4d |    x |       |      |
+| 4i |    x |       |      |
