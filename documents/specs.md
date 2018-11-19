@@ -3,7 +3,7 @@
 ## Arborescence
 
 ```
-cdp25
+**cdp25**
 │   README.md
 │   README-INSTALL.md  
 |   releases.md
@@ -11,20 +11,20 @@ cdp25
 |   .travis.yml
 |   docker-compose.yml
 |
-└───app
+└───**app**
 │   │   backlog.php
 │   │   index.php
 │   │   issue-form.php
 |   |   query.php
 |   |
-│   └───tests
+│   └───**tests**
 |   
-└───sprints
-    └───sprint1
-    |   └───issues1.md
-    |   └───tasks1.md
+└───**sprints**
+    └───**sprint1**
+    |   | issues1.md
+    |   | tasks1.md
     |
-    └───file022.txt
-    |   └───issues1.md
-    |   └───tasks1.md
+    └───**sprint2**
+        |   issues1.md
+        |   tasks1.md
 ```
