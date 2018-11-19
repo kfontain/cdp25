@@ -20,13 +20,20 @@ cdp25
 │   └───tests
 |   
 └───sprints
-    └───sprint1
-    |   | issues1.md
-    |   | tasks1.md
-    |
-    └───sprint2
-        |   issues1.md
-        |   tasks1.md
+|   └───sprint1
+|   |   |   issues1.md
+|   |   |   tasks1.md
+|   |
+|   └───sprint2
+|       |   issues1.md
+|       |   tasks1.md
+|
+└───documents
+|   └───specs.md
+|
+└───docker
+    └───mysql
+    └───php-apache
 ```
 ## Architecture
 
