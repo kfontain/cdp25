@@ -49,6 +49,8 @@ Une task est considérée comme étant finie lorsque le procédé de développem
 
 **Name of database :** scrum
 
-|    | **General** |            |          |        |
-| ID | Description | Difficulty | Priority | Sprint |
-|----|-------------|------------|----------|--------|
+### issues
+
+| ID | Description | Difficulty | Priority |
+|----|-------------|------------|----------|
+| INT UNSIGNED NOT NULL | TEXT NON NULL | INT | INT |
