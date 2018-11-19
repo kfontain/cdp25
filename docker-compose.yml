@@ -25,6 +25,8 @@ services:
       - ./docker/mysql/credentials.env
     environment:
       TZ: 'Europe/Paris'
+      MYSQL_CHARSET: utf8mb4
+      MYSQL_COLLATION: utf8mb4_general_ci
       # Permettre l'authentication facile pour utiliser phpMyAdmin
       #   Serveur: mysql
       #   Utilisateur: root
