@@ -1,9 +1,9 @@
-CREATE TABLE `scrum`.`projects` (
+CREATE TABLE IF NOT EXISTS `scrum`.`Projects` (
     `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    `name` TINYTEXT NOT NULL ,
+    `name` TEXT(64) NOT NULL ,
     `sprintLenght` INT NOT NULL,
     `description` TEXT NOT NULL ,
     `backlog` INT NOT NULL ,
     PRIMARY KEY(`id`),
-    UNIQUE `ind_email` (`email`(64))
+    UNIQUE `ind_email` (`name`(64))
 );
