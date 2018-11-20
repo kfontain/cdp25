@@ -23,15 +23,17 @@ public function connect()
 
 public function getIssues()
 {
-
+    //SELECT * FROM `issues`
 }
 
 public function deleteIssue($id=-1)
 {
+
 }
 
 public function createIssue($id=-1, $description='', $cost=0, $prio='')
 {
+    //INSERT INTO `issues` (`id`, `description`, `cost`, `priority`) VALUES (NULL, $description, $cost, $prio);
 }
 
 public function ModifyIssue($id=-1, $description='', $cost=0, $prio='')
