@@ -54,3 +54,9 @@ Une task est considérée comme étant finie lorsque le procédé de développem
 | id | description | cost | priority |
 |----|-------------|------------|----------|
 | INT UNSIGNED NOT NULL | TEXT NON NULL | INT | INT |
+
+### developpeurs
+
+|     username      |        email      |     password      |
+|-------------------|-------------------|-------------------|
+| TINYTEXT NON NULL | TEXT(64) NOT NULL | TINYTEXT NON NULL |
