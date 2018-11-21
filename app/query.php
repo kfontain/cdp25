@@ -7,36 +7,37 @@
  * createIssue(id, description, cost, prio)
  * modifyIssue(id, description, cost, prio)
  */
-$servername = 'localhost:8082';
-$username = 'root';
-$password = '';
+$servername = '172.19.0.2';
+$username = 'cdp25';
+$password = 'r8T44vN9qQ';
 $dbname = 'scrum';
 
-public function connect()
-{
-    $con = new mysqli($servername, $username, $password);
-    if ($con->connect_error) {
-        die('error');
-    }
-    echo('success');
+echo "before";
+$db = mysqli_connect($servername, $username, $password, $dbname);
+if (!$db) {
+    echo "connection failed";
 }
+echo "connection successful";
 
-public function getIssues()
+function getIssues();
 {
     //SELECT * FROM `issues`
 }
 
-public function deleteIssue($id=-1)
+function deleteIssue($id=-1)
 {
 
 }
 
-public function createIssue($id=-1, $description='', $cost=0, $prio='')
+function createIssue($id=-1, $description='', $cost=0, $prio='')
 {
     //INSERT INTO `issues` (`id`, `description`, `cost`, `priority`) VALUES (NULL, $description, $cost, $prio);
 }
 
-public function ModifyIssue($id=-1, $description='', $cost=0, $prio='')
+function ModifyIssue($id=-1, $description='', $cost=0, $prio='')
 {
+
 }
+
 ?>
+
