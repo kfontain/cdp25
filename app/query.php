@@ -2,41 +2,45 @@
 
 /*
  * connect()
+ * ISSUES
  * getIssues()
  * deleteIssue(id)
- * createIssue(id, description, cost, prio)
+ * createIssue(description, cost, prio)
  * modifyIssue(id, description, cost, prio)
+ *
+ * PROJECTS
+ * createProject(name, sprintLenght)
  */
-$servername = 'localhost:8082';
-$username = 'root';
-$password = '';
-$dbname = 'scrum';
 
-public function connect()
+function connect()
 {
-    $con = new mysqli($servername, $username, $password);
-    if ($con->connect_error) {
-        die('error');
+    try {
+        $bdd = new PDO('mysql:host=mysql;port=3306;dbname=scrum', 'root', '');
+        $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
     }
-    echo('success');
 }
 
-public function getIssues()
+function getIssues()
 {
-    //SELECT * FROM `issues`
+    //return $bdd->query('SELECT * FROM `Issues`');
 }
 
-public function deleteIssue($id=-1)
+function deleteIssue($id=-1)
 {
-
 }
 
-public function createIssue($id=-1, $description='', $cost=0, $prio='')
+function createIssue($description='', $cost=0, $prio='')
 {
     //INSERT INTO `issues` (`id`, `description`, `cost`, `priority`) VALUES (NULL, $description, $cost, $prio);
 }
 
-public function ModifyIssue($id=-1, $description='', $cost=0, $prio='')
+function ModifyIssue($id=-1, $description='', $cost=0, $prio='')
 {
 }
-?>
+
+function createProject($name=null, $sprintLenght=null, $description="")
+{
+    //INSERT INTO `Projects` (`id`, `name`, `sprintLenght`, `description`) VALUES (NULL, $name, $sprintLenght, $description);
+}
