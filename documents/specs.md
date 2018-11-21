@@ -49,20 +49,26 @@ Une task est considérée comme étant finie lorsque le procédé de développem
 
 **Name of database :** scrum
 
-### issues
+### Issues
 
-| id | description | cost | priority | project |
+| id | description | cost | priority | project(fk Projects(id)) |
 |----|-------------|------------|-------------|----------------|
 | INT UNSIGNED NOT NULL | TEXT NON NULL | INT | INT | INT UNSIGNED NOT NULL |
 
-### developpeurs
+### Developpeurs
 
 | id |     username      |        email      |     password      |
 |----|-------------------|-------------------|-------------------|
 | INT UNSIGNED NOT NULL | TINYTEXT NON NULL | TEXT(64) NOT NULL | TINYTEXT NON NULL |
 
-### projects
+### Projects
 
 | id |     name      |        sprintLenght      |    description      |
 |----|-------------------|-------------------|-------------------|
 | INT UNSIGNED NOT NULL | TEXT(64) NON NULL | INT NOT NULL | TEXT |
+
+### Travailler
+
+| id | project(fk Projects(id)) | developpeur(fk Developpeurs(id)) |
+|----|---------|-------------|
+| INT UNSIGNED NOT NULL | INT UNSIGNED NOT NULL | INT UNSIGNED NOT NULL |
