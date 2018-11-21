@@ -10,32 +10,33 @@
  * @param int $id ID of issue.
  * @return array|bool Issue array, or FALSE on failure.
  */
-function getIssue($id) {
+function getIssue($id)
+{
     $mysqli = new mysqli($_ENV['MYSQL_HOST'], $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD'], $_ENV['MYSQL_DATABASE']);
 
     if ($mysqli->connect_error) {
         $error = 'Connect Error (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error;
         trigger_error($error, E_USER_ERROR);
-        return FALSE;
+        return false;
     }
 
-    $sql = 'SELECT * FROM issues WHERE id = ? LIMIT 1';
+    $sql = 'SELECT * FROM Issues WHERE id = ? LIMIT 1';
 
     $stmt = $mysqli->prepare($sql);
-    if ($stmt === FALSE) {
+    if ($stmt === false) {
         $error = 'Prepare Error (' . $mysqli->errno . ') ' . $mysqli->error;
         trigger_error($error, E_USER_ERROR);
-        return FALSE;
+        return false;
     }
 
     $stmt->bind_param('i', $id);
     $stmt->execute();
 
     $result = $stmt->get_result();
-    if ($stmt === FALSE) {
+    if ($stmt === false) {
         $error = 'Result Error (' . $mysqli->errno . ') ' . $mysqli->error;
         trigger_error($error, E_USER_ERROR);
-        return FALSE;
+        return false;
     }
 
     $issue = $result->fetch_assoc();
@@ -50,8 +51,8 @@ if (isset($_GET['id']) && ctype_digit($_GET['id'])) {
     $TITLE = "Modify Issue #$id";
 } else {
     $action = 'add';
-    $id = NULL;
-    $issue = NULL;
+    $id = null;
+    $issue = null;
     $TITLE = 'Add New Issue';
 }
 ?>
@@ -73,7 +74,9 @@ if (isset($_GET['id']) && ctype_digit($_GET['id'])) {
                     <td>
                         <textarea id="description" name="description"
                                   maxlength="500" rows="5" cols="50"
-                                  required="required"><?php if (is_array($issue)) echo $issue['description']; ?></textarea>
+                                  required="required"><?php if (is_array($issue)) {
+    echo $issue['description'];
+} ?></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -92,10 +95,18 @@ if (isset($_GET['id']) && ctype_digit($_GET['id'])) {
                         $selected = 'selected="selected"';
                         ?>
                         <select id="priority" name="priority">
-                            <option value="0" <?php if ($priority === 0) echo $selected; ?>>None</option>
-                            <option value="1" <?php if ($priority === 1) echo $selected; ?>>Low</option>
-                            <option value="2" <?php if ($priority === 2) echo $selected; ?>>Medium</option>
-                            <option value="3" <?php if ($priority === 3) echo $selected; ?>>High</option>
+                            <option value="0" <?php if ($priority === 0) {
+                            echo $selected;
+                        } ?>>None</option>
+                            <option value="1" <?php if ($priority === 1) {
+                            echo $selected;
+                        } ?>>Low</option>
+                            <option value="2" <?php if ($priority === 2) {
+                            echo $selected;
+                        } ?>>Medium</option>
+                            <option value="3" <?php if ($priority === 3) {
+                            echo $selected;
+                        } ?>>High</option>
                         </select>
                     </td>
                 </tr>
