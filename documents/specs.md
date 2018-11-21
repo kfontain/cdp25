@@ -51,12 +51,18 @@ Une task est considérée comme étant finie lorsque le procédé de développem
 
 ### issues
 
-| id | description | cost | priority |
-|----|-------------|------------|----------|
-| INT UNSIGNED NOT NULL | TEXT NON NULL | INT | INT |
+| id | description | cost | priority | project |
+|----|-------------|------------|-------------|----------------|
+| INT UNSIGNED NOT NULL | TEXT NON NULL | INT | INT | INT UNSIGNED NOT NULL |
 
 ### developpeurs
 
-|     username      |        email      |     password      |
-|-------------------|-------------------|-------------------|
-| TINYTEXT NON NULL | TEXT(64) NOT NULL | TINYTEXT NON NULL |
+| id |     username      |        email      |     password      |
+|----|-------------------|-------------------|-------------------|
+| INT UNSIGNED NOT NULL | TINYTEXT NON NULL | TEXT(64) NOT NULL | TINYTEXT NON NULL |
+
+### projects
+
+| id |     name      |        sprintLenght      |    description      |
+|----|-------------------|-------------------|-------------------|
+| INT UNSIGNED NOT NULL | TEXT(64) NON NULL | INT NOT NULL | TEXT |
