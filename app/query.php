@@ -21,6 +21,7 @@ function connect()
         echo "Error: " . $e->getMessage();
     }
 }
+echo "connection successful";
 
 function getIssues()
 {
