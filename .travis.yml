@@ -21,4 +21,4 @@ install:
 
 script:
     - make all
-    - python tests.py
+    - pytest
