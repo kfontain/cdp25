@@ -12,17 +12,6 @@
  * createProject(name, sprintLenght)
  */
 
-function connect()
-{
-    try {
-        $bdd = new PDO('mysql:host=mysql;port=3306;dbname=scrum', 'root', '');
-        $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch (PDOException $e) {
-        echo "Error: " . $e->getMessage();
-    }
-}
-echo "connection successful";
-
 function getIssues()
 {
     //return $bdd->query('SELECT * FROM `Issues`');
@@ -43,5 +32,5 @@ function ModifyIssue($id=-1, $description='', $cost=0, $prio='')
 
 function createProject($name=null, $sprintLenght=null, $description="")
 {
-    //INSERT INTO `Projects` (`id`, `name`, `sprintLenght`, `description`) VALUES (NULL, $name, $sprintLenght, $description);
 }
+
