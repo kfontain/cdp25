@@ -17,6 +17,7 @@ before_install:
     - docker run -d --link selenium-hub:hub --name selenium-node-firefox -v /dev/shm:/dev/shm selenium/node-firefox:3.8.1-francium
 
 install:
+    - pip install --upgrade pip
     - pip install -r requirements.txt
 
 script:
