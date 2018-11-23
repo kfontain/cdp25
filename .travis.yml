@@ -3,15 +3,12 @@ sudo: required
 language: python
 python:
     - "2.7"
-    - "3.6"
 
 services:
     - docker
 
 env:
     - MOZ_HEADLESS=1
-addons:
-    firefox: latest
 
 before_install:
     - cd tests
