@@ -20,8 +20,9 @@ before_install:
     - tar -xzf geckodriver-v0.23.0-linux64.tar.gz -C geckodriver
     - export PATH=$PATH:$PWD/geckodriver
     - geckodriver --version
+    - sudo apt-get install xvfb
     - pip install selenium
-    - pip install mysql-connector
+    - pip install pyvirtualdisplay
 
 install:
     - cd ..
