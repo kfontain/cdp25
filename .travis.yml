@@ -20,15 +20,8 @@ before_install:
     - tar -xzf geckodriver-v0.23.0-linux64.tar.gz -C geckodriver
     - export PATH=$PATH:$PWD/geckodriver
     - geckodriver --version
-<<<<<<< HEAD
     - pip install selenium
     - pip install mysql-connector
-=======
-    - docker pull selenium/node-firefox:3.14.0
-    - docker pull selenium/hub:3.14.0
-    - docker run -d -p 4444:4444 --name selenium-hub selenium/hub:3.14.0
-    - docker run -d --link selenium-hub:hub --name selenium-node-firefox -v /dev/shm:/dev/shm selenium/node-firefox:3.14.0
->>>>>>> a87f756440648aa0836fc06cb72d2325e235237d
 
 install:
     - cd ..
