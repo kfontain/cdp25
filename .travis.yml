@@ -33,6 +33,4 @@ install:
 
 script:
     - cd tests
-#    - python tests.py
-    - for f in *.py; do python "$f"; done
-    - cat geckodriver.log
+    - ./run-all.sh || cat geckodriver.log
