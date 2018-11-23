@@ -1,6 +1,5 @@
 #!/bin/bash
+set -e
 for file in *.py; do
-	if python "$file"; then
-	  exit "$?"
-	fi
+	python "$file"
 done
