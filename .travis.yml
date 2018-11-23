@@ -33,4 +33,4 @@ install:
 
 script:
     - cd tests
-    - ./run-all.sh || cat geckodriver.log
+    - ./run-all.sh || (cat geckodriver.log && exit 1)
