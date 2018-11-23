@@ -10,7 +10,13 @@ services:
     - docker
 
 before_install:
+    - cd tests
     - pip install --upgrade pip
+    - wget https://github.com/mozilla/geckodriver/releases/download/v0.23.0/geckodriver-v0.23.0-linux64.tar.gz
+    - mkdir geckodriver
+    - tar -xzf geckodriver-v0.23.0-linux64.tar.gz -C geckodriver
+    - export PATH=$PATH:$PWD/geckodriver
+    - geckodriver --version
     - docker pull selenium/node-firefox:3.8.1-francium
     - docker pull selenium/hub:3.8.1-francium
     - docker run -d -p 4444:4444 --name selenium-hub selenium/hub:3.8.1-francium
@@ -18,8 +24,10 @@ before_install:
 
 install:
     - pip install -r requirements.txt
+    - make all
 
 script:
-    - make all
+    - sleep 5
 #    - python tests.py
-    - for f in tests/*.py; do python "$f"; done
+    - for f in *.py; do python "$f"; done
+    - cat geckodriver.log
