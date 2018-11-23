@@ -4,11 +4,9 @@ notifications:
     slack: ub-cdp-2018:885kgxJhrQxrecwMNklxzp66
 
 language: python
-python:
-    - "2.7"
+python: "2.7"
 
-services:
-    - docker
+services: docker
 
 env:
     - MOZ_HEADLESS=1
@@ -35,4 +33,6 @@ install:
 
 script:
     - cd tests
-    - ./run-all.sh || (cat geckodriver.log && exit 1)
+    - ./run-all.sh
+
+after_failure: cat geckodriver.log
