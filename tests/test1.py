@@ -9,7 +9,7 @@ Depuis la page d'accueil:
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 
-driver = webdriver.Firefox()
+# driver = webdriver.Firefox()
 
 driver.get("http://localhost:8080/backlog.php")
 
