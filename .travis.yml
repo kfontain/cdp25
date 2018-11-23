@@ -12,6 +12,8 @@ services:
 
 env:
     - MOZ_HEADLESS=1
+addons:
+    firefox: latest
 
 before_install:
     - cd tests
