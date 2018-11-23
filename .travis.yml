@@ -1,5 +1,8 @@
 sudo: required
 
+notifications:
+    slack: ub-cdp-2018:885kgxJhrQxrecwMNklxzp66
+
 language: python
 python:
     - "2.7"
