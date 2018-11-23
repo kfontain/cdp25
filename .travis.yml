@@ -21,10 +21,10 @@ before_install:
     - tar -xzf geckodriver-v0.23.0-linux64.tar.gz -C geckodriver
     - export PATH=$PATH:$PWD/geckodriver
     - geckodriver --version
-    - docker pull selenium/node-firefox:3.14.0-dubnium
-    - docker pull selenium/hub:3.14.0-dubnium
-    - docker run -d -p 4444:4444 --name selenium-hub selenium/hub:3.14.0-dubnium
-    - docker run -d --link selenium-hub:hub --name selenium-node-firefox -v /dev/shm:/dev/shm selenium/node-firefox:3.14.0-dubnium
+    - docker pull selenium/node-firefox:3.14.0
+    - docker pull selenium/hub:3.14.0
+    - docker run -d -p 4444:4444 --name selenium-hub selenium/hub:3.14.0
+    - docker run -d --link selenium-hub:hub --name selenium-node-firefox -v /dev/shm:/dev/shm selenium/node-firefox:3.14.0
 
 install:
     - pip install -r requirements.txt
