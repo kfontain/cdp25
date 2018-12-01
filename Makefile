@@ -21,3 +21,7 @@ clean:
 
 destroy:
 	docker-compose down -v --remove-orphans
+
+test-unit:
+	docker pull phpunit/phpunit
+	docker run -v "$$(pwd)":/app --rm phpunit/phpunit -c phpunit.xml

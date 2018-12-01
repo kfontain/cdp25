@@ -1,0 +1,7 @@
+<phpunit>
+    <testsuites>
+        <testsuite name="CDP 2.5 Unit Tests">
+            <directory suffix="-test.php">./tests/unit</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
