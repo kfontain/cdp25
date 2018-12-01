@@ -12,6 +12,8 @@ env:
     - MOZ_HEADLESS=1
 addons:
     firefox: latest
+    sonarcloud:
+        organization: "kfontain-github"
 
 before_install:
     - pip install --upgrade pip
@@ -31,6 +33,7 @@ before_script:
     - make all
 
 script:
+    - sonar-scanner
     - geckodriver --version
     - make test-unit
     - make test-e2e
