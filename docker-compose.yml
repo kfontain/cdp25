@@ -10,7 +10,7 @@ services:
     ports:
       - 8080:80
     volumes:
-      - ./app:/var/www/html:z
+      - ./src:/var/www/html:z
     # MySQL doit être créée avant ce serveur
     links:
       - mysql
