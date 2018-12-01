@@ -31,5 +31,5 @@ test-unit:
 	docker run -v "$$(pwd)":/app --rm phpunit/phpunit -c $(PHPUNIT_CONFIG)
 
 test-e2e: up
-	pip install --user -r $(E2E_TEST_DIR)/requirements.txt
+	pip install -r $(E2E_TEST_DIR)/requirements.txt
 	$(E2E_TEST_DIR)/run-all.sh
