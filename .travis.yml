@@ -32,6 +32,7 @@ install:
     - make all
 
 script:
+    - make test-unit
     - cd tests
     - ./run-all.sh
 
