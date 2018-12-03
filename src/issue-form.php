@@ -74,7 +74,7 @@ if (isset($_GET['id']) && ctype_digit($_GET['id'])) {
                     <td>
                         <textarea id="description" name="description"
                                   maxlength="500" rows="5" cols="50"
-                                  required="required"><?php if (is_array($issue)) echo $issue['description']; ?></textarea>
+                                  required="required"><?php if (is_array($issue)) { echo $issue['description']; } ?></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -93,10 +93,10 @@ if (isset($_GET['id']) && ctype_digit($_GET['id'])) {
                         $selected = 'selected="selected"';
                         ?>
                         <select id="priority" name="priority">
-                            <option value="0" <?php if ($priority === 0) echo $selected; ?>>None</option>
-                            <option value="1" <?php if ($priority === 1) echo $selected;  ?>>Low</option>
-                            <option value="2" <?php if ($priority === 2) echo $selected;  ?>>Medium</option>
-                            <option value="3" <?php if ($priority === 3) echo $selected;  ?>>High</option>
+                            <option value="0" <?php if ($priority === 0) { echo $selected; } ?>>None</option>
+                            <option value="1" <?php if ($priority === 1) { echo $selected; } ?>>Low</option>
+                            <option value="2" <?php if ($priority === 2) { echo $selected; } ?>>Medium</option>
+                            <option value="3" <?php if ($priority === 3) { echo $selected; } ?>>High</option>
                         </select>
                     </td>
                 </tr>
