@@ -5,7 +5,7 @@
 * Kenji Fontaine
 
 [![Build Status](https://travis-ci.org/kfontain/cdp25.svg?branch=master)](https://travis-ci.org/kfontain/cdp25)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=kfontain_cdp25&metric=code_smells)
+![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=kfontain_cdp25&metric=code_smells)
 
 ## Backlog
 
