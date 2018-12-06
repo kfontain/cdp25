@@ -14,8 +14,6 @@ Les tasks sont catégoriées en deux types (Design et Implementation). Le coût 
 |  F | Déterminer le nom du fichier php ainsi que des fonctions permettant à un développeur de créer un nouveau projet à son nom. Spécifier ces noms dans le fichier de spécification. Implémenter ce fichier et ces fonctions. | 1.5 | | 4 |
 |  G | Déterminer le nom du fichier php qui permettra de se connecter, cette page comportera 2 champs, le premier pour l'username(obligatoire), le deuxieme pour le mot de passe(obligatoire). Un bouton *login* afin de pouvoir se connecter. Un bouton *signup* afin de pouvoir aller sur la page de création de compte. Implémenter cette page. | 1 || 2 |
 |  H | Déterminer le nom du fichier php qui permettra de créer un compte, cette page comportera 3 champs,le premier pour l'adresse mail(obligatoire), la deuxième pour l'username(obligatoire), le troisieme pour le mot de passe(obligatoire). Un bouton *create* afin de pouvoir creer le compte. Un bouton *login* afin de pouvoir aller sur la page de connection. | 1 || 1 |
-|  I | Déterminer le nom de la table SQL ainsi que les champs permettant de stocker un développeur. Renseigner les champs de la table dans le fichier de spécifications. Implémenter ce fichier et ces fonctions. | 1 | | 4 |
-|  J | Déterminer le nom de la table SQL ainsi que les champs permettant de stocker un projet. Renseigner les champs de la table dans le fichier de spécifications. Implémenter ce fichier et ces fonctions. | 1 | | 4 |
 | **Tests** |             |      |            |       |
 | 1 | Test : visualisation d’un backlog. Déterminer le nom du fichier permettant d'effectuer ce test qui se trouvera dans cdp25/app/test. Ajouter le nom de ce fichier de test au fichier de spécification. | 1 | D | 8 |
 | 2 | Test : modification d’une issue. Déterminer le nom du fichier permettant d'effectuer ce test qui se trouvera dans cdp25/app/test. | 1 | A, B, C, D | 10 |
@@ -33,8 +31,6 @@ Les tasks sont catégoriées en deux types (Design et Implementation). Le coût 
 | F  |    x |       |      |
 | G  |    x |       |      |
 | H  |    x |       |      |
-| I  |      |       |    x |
-| J  |      |       |    x |
 | 1  |    x |       |      |
 | 2  |    x |       |      |
 | 3  |    x |       |      |

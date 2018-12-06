@@ -72,3 +72,20 @@ Une task est considérée comme étant finie lorsque le procédé de développem
 | id | project(fk Projects(id)) | developpeur(fk Developpeurs(id)) |
 |----|---------|-------------|
 | INT UNSIGNED NOT NULL | INT UNSIGNED NOT NULL | INT UNSIGNED NOT NULL |
+
+### Coding style
+
+## PHP
+
+```
+<?php
+/**
+ * My comment.
+ */
+function foo()
+{
+
+}
+>
+```
+
