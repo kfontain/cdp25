@@ -4,45 +4,7 @@
  * Modify Issue #3: issue-form.php?id=3
  */
 
-/**
- * Gets an issue by ID.
- *
- * @param int $id ID of issue.
- * @return array|bool Issue array, or FALSE on failure.
- */
-function getIssue($id)
-{
-    $mysqli = new mysqli($_ENV['MYSQL_HOST'], $_ENV['MYSQL_USER'], $_ENV['MYSQL_PASSWORD'], $_ENV['MYSQL_DATABASE']);
-
-    if ($mysqli->connect_error) {
-        $error = 'Connect Error (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error;
-        trigger_error($error, E_USER_ERROR);
-        return false;
-    }
-
-    $sql = 'SELECT * FROM Issues WHERE id = ? LIMIT 1';
-
-    $stmt = $mysqli->prepare($sql);
-    if ($stmt === false) {
-        $error = 'Prepare Error (' . $mysqli->errno . ') ' . $mysqli->error;
-        trigger_error($error, E_USER_ERROR);
-        return false;
-    }
-
-    $stmt->bind_param('i', $id);
-    $stmt->execute();
-
-    $result = $stmt->get_result();
-    if ($stmt === false) {
-        $error = 'Result Error (' . $mysqli->errno . ') ' . $mysqli->error;
-        trigger_error($error, E_USER_ERROR);
-        return false;
-    }
-
-    $issue = $result->fetch_assoc();
-    $mysqli->close();
-    return $issue;
-}
+require_once 'query.php';
 
 if (isset($_GET['id']) && ctype_digit($_GET['id'])) {
     $action = 'modify';
